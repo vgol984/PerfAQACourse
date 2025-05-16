@@ -7,16 +7,16 @@ public class Exceptions {
         Exceptions test = new Exceptions();
         //Проверка первого метода:
         test.divideByZero(20, 0);
-        System.out.println("\n_______________________________________________");
+        System.out.println("\n_________________________________________________");
         //Проверка второго метода:
         test.arrayTrobles();
-        System.out.println("\n_______________________________________________");
+        System.out.println("\n_________________________________________________");
         //Проверка третьего метода:
         test.parseInt("fdg");
-        System.out.println("\n_______________________________________________");
+        System.out.println("\n_________________________________________________");
         //Проверка четвертого метода:
         test.lastMethod();
-        System.out.println("\n_______________________________________________");
+        System.out.println("\n_________________________________________________");
     }
 
     public void divideByZero(int a, int b) {
