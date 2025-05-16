@@ -1,9 +1,24 @@
 package homework_7;
 
 import java.util.Arrays;
-import java.util.Objects;
 
 public class Exceptions {
+    public static void main(String[] args) {
+        Exceptions test = new Exceptions();
+        //Проверка первого метода:
+        test.divideByZero(20, 0);
+        System.out.println("\n_______________________________________________");
+        //Проверка второго метода:
+        test.arrayTrobles();
+        System.out.println("\n_______________________________________________");
+        //Проверка третьего метода:
+        test.parseInt("fdg");
+        System.out.println("\n_______________________________________________");
+        //Проверка четвертого метода:
+        test.lastMethod();
+        System.out.println("\n_______________________________________________");
+    }
+
     public void divideByZero(int a, int b) {
         try {
             int c = a / b;
@@ -40,21 +55,5 @@ public class Exceptions {
         } finally {
             System.out.println("Но, оказывается, при использовании finally можно не использовать catch!");
         }
-    }
-
-    public static void main(String[] args) {
-        Exceptions test = new Exceptions();
-        //Проверка первого метода:
-        test.divideByZero(20, 0);
-        System.out.println("\n_______________________________________________");
-        //Проверка второго метода:
-        test.arrayTrobles();
-        System.out.println("\n_______________________________________________");
-        //Проверка третьего метода:
-        test.parseInt("fdg");
-        System.out.println("\n_______________________________________________");
-        //Проверка четвертого метода:
-        test.lastMethod();
-        System.out.println("\n_______________________________________________");
     }
 }
